@@ -7,7 +7,7 @@ b.out:
 
 test: a.out
 	./a.out
-test: b.out
+test2: b.out
 	./b.out
 clean:
 	rm a.out b.out
