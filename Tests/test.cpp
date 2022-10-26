@@ -9,7 +9,7 @@ float a2 = (35.0/50.0)*pow(2.71828,-0.11/(50.0*0.016));
 float a3 = (15.0/20.0)*pow(2.71828,-0.066/(20.0*0.055));
 TEST_CASE( "Tests_1", "Tests" ) {
     REQUIRE( abs(RC_current(6,100,0.026,1.4) - a1)<1e-6);
-    REQUIRE( abs(RC_current(35,50,0.016,0.11) -a2)<1e-6);
+    REQUIRE( abs(RC_current(35,50,0.016,0.11) - a2)<1e-6);
 }
 TEST_CASE( "Tests_2", "Tests" ) {
     REQUIRE( abs(RC_current(15,20,0.055,0.066) - a3)<1e-6);
