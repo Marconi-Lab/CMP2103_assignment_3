@@ -2,8 +2,10 @@
 #include "catch.hpp"
 #include "../main.cpp"
 
+float a4 = (10/50.0)*pow(2.71828,-2.11/(50.0*0.16));
+float a5 = (35/50.0)*pow(2.71828,-0.11/(50.0*0.016));
 TEST_CASE( "Tests_2", "Tests_2" ) {
-    REQUIRE( RC_current(10,50.4,0.16,2.11) == 0.152733 );
-    REQUIRE( RC_current(35,50,0.016,0.11) == 0.00516651);
+    REQUIRE( RC_current(10,50.4,0.16,2.11) == a4);
+    REQUIRE( RC_current(35,50,0.016,0.11) == a5);
 }
 
